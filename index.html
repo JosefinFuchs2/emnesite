@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soundmatch</title>
+    <title>Soundform</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="menu.js" defer></script>
   </head>
+
   <body>
     <!-- HEADER -->
     <header>
       <div class="logo">
-        <a href="/">
-          <img src="logoer/logorund.webp" alt="Logo" />
-        </a>
+        <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="profil.html">Profil</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="udforsk.html">Udforsk</a></li>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="artikler.html">Artikler</a></li>
+          <li><a href="nyhedsbrev.html">Nyhedsbrev</a></li>
+          <li><a href="omos.html">Om os</a></li>
         </ul>
         <button class="burger">
           <span class="line"></span>
@@ -28,19 +28,73 @@
         </button>
       </nav>
     </header>
-    <!-- MAIN -->
-    <main>
-      <section>
-        <div>
-          <h1>Forside</h1>
-          <p></p>
-        </div>
-        <img src="" alt="" />
-      </section>
-      <section class="gallery"></section>
-    </main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Hero artikel" />
+      <div class="hero-text">
+        <h1>
+          Det værste ved Taylor Swifts nye diss-track er, at det ikke engang er
+          underholdende
+        </h1>
+        <p>
+          En ny artikel om, hvordan musik og følelser mødes i moderne kultur.
+        </p>
+        <a href="artikel.html" class="btn-primary">Læs mere</a>
+      </div>
+    </section>
+
+    <!-- ARTIKLER -->
+    <section class="news-grid">
+      <article>
+        <img src="images/article1.jpg" alt="Billie Eilish" />
+        <h2>Billie Eilish overrasker igen</h2>
+        <p>Kort teasertekst der beskriver artiklen.</p>
+      </article>
+
+      <article>
+        <img src="images/article2.jpg" alt="Rosalia" />
+        <h2>Rosalía i ny rolle som producent</h2>
+        <p>Læs hvordan hun redefinerer popmusik.</p>
+      </article>
+
+      <article>
+        <img src="images/article3.jpg" alt="Drake" />
+        <h2>Drake vender tilbage</h2>
+        <p>En analyse af hans seneste album og temaer.</p>
+      </article>
+    </section>
+
+    <!-- ANMELDELSER -->
+    <section class="reviews">
+      <h2>Seneste anmeldelser</h2>
+      <div class="review-grid">
+        <article>
+          <img src="images/review1.jpg" alt="Fred again album" />
+          <h3>Fred again.. - Actual Life 4</h3>
+          <p>★★★★★</p>
+        </article>
+        <article>
+          <img src="images/review2.jpg" alt="SZA album" />
+          <h3>SZA - SOS</h3>
+          <p>★★★★☆</p>
+        </article>
+        <article>
+          <img src="images/review3.jpg" alt="Ice Spice album" />
+          <h3>Ice Spice - Y2K!</h3>
+          <p>★★★☆☆</p>
+        </article>
+      </div>
+    </section>
+
     <!-- FOOTER -->
-    <footer></footer>
-    <script src="menu.js"></script>
+    <footer>
+      <h2>Få dagens tophistorier i din inbox</h2>
+      <form>
+        <input type="email" placeholder="Din e-mail-adresse" required />
+        <button type="submit">Tilmeld</button>
+      </form>
+      <p class="smalltext">© 2025 Soundform</p>
+    </footer>
   </body>
 </html>
