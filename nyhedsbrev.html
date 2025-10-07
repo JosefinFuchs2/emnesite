@@ -1,1 +1,75 @@
-nyhedsbrav.
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nyhedsbrev – Soundform</title>
+    <link rel="icon" type="image/webp" href="logoer/logo.webp" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="topbar">
+      <button class="burger" aria-label="Åbn menu">
+        <span></span> <span></span> <span></span>
+      </button>
+      <div class="logo">
+        <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
+      </div>
+      <div class="search">🔍</div>
+    </header>
+    <!-- BURGERMENU OVERLAY -->
+    <nav class="overlay-menu">
+      <button class="close-btn" aria-label="Luk menu">✕</button>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="artikler.html">Artikler</a></li>
+        <li><a href="nyhedsbrev.html">Nyhedsbrev</a></li>
+        <li><a href="omos.html">Om os</a></li>
+      </ul>
+      <div class="overlay-footer">
+        <a href="#">Kontakt</a> <a href="#">Ændresamtykke</a>
+        <a href="#">Persondata</a>
+      </div>
+    </nav>
+    <main class="newsletter-page">
+      <h1>NYHEDSBREVE</h1>
+      <hr />
+      <h2>Få Soundforms nyhedsbreve leveret direkte til din inbox.</h2>
+      <form class="newsletter-form">
+        <div class="input-row">
+          <input type="email" placeholder="Din e-mail-adresse" required />
+          <button type="submit">Tilmeld</button>
+        </div>
+        <p class="small-text">
+          Jeg ønsker at modtage et eller flere af Soundforms nyhedsbreve, hvor
+          jeg vil modtage det bedste fra redaktionen samt markedsføring fra
+          vores partnere.
+        </p>
+      </form>
+      <div class="newsletter-box">
+        <h3><span class="dot">●</span> Dagens vigtigste</h3>
+        <p>
+          Alt det du ikke må gå glip af om musik, film og serier. Så behøver du
+          ikke mere.
+        </p>
+        <span class="tag">HVERDAGE</span>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="links">
+          <a href="#">Kontakt</a> <a href="#">Ændresamtykke</a>
+          <a href="#">Persondata</a>
+        </div>
+        <p class="copyright">© 2025 SOUNDFORM</p>
+      </div>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
+</html>
