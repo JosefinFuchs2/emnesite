@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #1b1b1b;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,14 +43,14 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333333;
+  color: #ff5900;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
 .menu a:hover {
-  color: #ff0000;
+  color: #ffaa5a;
 }
 
 .burger {
@@ -63,7 +63,7 @@ nav {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: #000000;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
