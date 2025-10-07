@@ -4,97 +4,187 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soundform</title>
+    <link rel="icon" type="image/webp" href="logoer/logo.webp" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="menu.js" defer></script>
   </head>
 
   <body>
     <!-- HEADER -->
-    <header>
+    <header class="topbar">
+      <button class="burger" aria-label="Åbn menu">
+        <span></span><span></span><span></span>
+      </button>
+
       <div class="logo">
         <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
       </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Forside</a></li>
-          <li><a href="artikler.html">Artikler</a></li>
-          <li><a href="nyhedsbrev.html">Nyhedsbrev</a></li>
-          <li><a href="omos.html">Om os</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
+
+      <button class="search" aria-label="Søg">🔍</button>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <img src="images/hero.jpg" alt="Hero artikel" />
-      <div class="hero-text">
-        <h1>
-          Det værste ved Taylor Swifts nye diss-track er, at det ikke engang er
-          underholdende
-        </h1>
-        <p>
-          En ny artikel om, hvordan musik og følelser mødes i moderne kultur.
-        </p>
-        <a href="artikel.html" class="btn-primary">Læs mere</a>
+    <!-- BURGERMENU OVERLAY -->
+    <nav class="overlay-menu" aria-hidden="true">
+      <button class="close-btn" aria-label="Luk menu">✕</button>
+
+      <ul class="overlay-links">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="artikler.html">Artikler</a></li>
+        <li><a href="nyhedsbrev.html">Nyhedsbrev</a></li>
+        <li><a href="omos.html">Om os</a></li>
+      </ul>
+
+      <div class="overlay-footer">
+        <a href="#">Kontakt</a>
+        <a href="#">Ændresamtykke</a>
+        <a href="#">Persondata</a>
       </div>
-    </section>
+    </nav>
 
-    <!-- ARTIKLER -->
-    <section class="news-grid">
-      <article>
-        <img src="images/article1.jpg" alt="Billie Eilish" />
-        <h2>Billie Eilish overrasker igen</h2>
-        <p>Kort teasertekst der beskriver artiklen.</p>
-      </article>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-article">
+          <img src="galleri/jcole.webp" alt="Hero artikel" />
+          <div class="hero-text">
+            <h1>Det værste ved Taylor Swifts nye disstrack</h1>
+            <p>Det er, at det ikke engang er underholdende</p>
+          </div>
+        </div>
 
-      <article>
-        <img src="images/article2.jpg" alt="Rosalia" />
-        <h2>Rosalía i ny rolle som producent</h2>
-        <p>Læs hvordan hun redefinerer popmusik.</p>
-      </article>
+        <!-- 3 fremhævede artikler -->
+        <div class="hero-grid tiles">
+          <article>
+            <img src="galleri/billie.webp" alt="Billie Eilish" />
+            <h2>Billie Eilish overrasker igen</h2>
+            <p>Kort teasertekst der beskriver artiklen.</p>
+          </article>
+          <article>
+            <img src="galleri/rosalia.webp" alt="Rosalía" />
+            <h2>Rosalía i ny rolle som producent</h2>
+            <p>Læs hvordan hun redefinerer popmusik.</p>
+          </article>
+          <article>
+            <img src="galleri/drake.webp" alt="Drake" />
+            <h2>Drake vender tilbage</h2>
+            <p>En analyse af hans seneste album og temaer.</p>
+          </article>
+        </div>
+      </section>
 
-      <article>
-        <img src="images/article3.jpg" alt="Drake" />
-        <h2>Drake vender tilbage</h2>
-        <p>En analyse af hans seneste album og temaer.</p>
-      </article>
-    </section>
+      <!-- Taylor Swift sektion -->
+      <section class="dark-section">
+        <h2>Taylor Swifts nye æra</h2>
+        <div class="grid-3 tiles">
+          <article>
+            <img src="galleri/taylor1.webp" alt="Taylor Swift artikel 1" />
+            <p>Artikel 1</p>
+          </article>
+          <article>
+            <img src="galleri/taylor2.webp" alt="Taylor Swift artikel 2" />
+            <p>Artikel 2</p>
+          </article>
+          <article>
+            <img src="galleri/taylor3.webp" alt="Taylor Swift artikel 3" />
+            <p>Artikel 3</p>
+          </article>
+        </div>
+      </section>
 
-    <!-- ANMELDELSER -->
-    <section class="reviews">
-      <h2>Seneste anmeldelser</h2>
-      <div class="review-grid">
-        <article>
-          <img src="images/review1.jpg" alt="Fred again album" />
-          <h3>Fred again.. - Actual Life 4</h3>
-          <p>★★★★★</p>
-        </article>
-        <article>
-          <img src="images/review2.jpg" alt="SZA album" />
-          <h3>SZA - SOS</h3>
-          <p>★★★★☆</p>
-        </article>
-        <article>
-          <img src="images/review3.jpg" alt="Ice Spice album" />
-          <h3>Ice Spice - Y2K!</h3>
-          <p>★★★☆☆</p>
-        </article>
-      </div>
-    </section>
+      <!-- Kategori -->
+      <section class="category">
+        <h2>Anbefalinger</h2>
+        <div class="grid-4 tiles">
+          <article>
+            <img src="galleri/rihanna.webp" alt="Rihanna" />
+            <p>Ny sang</p>
+          </article>
+          <article>
+            <img src="galleri/sombr.webp" alt="Album analyse" />
+            <p>Album analyse</p>
+          </article>
+          <article>
+            <img src="galleri/kanye.webp" alt="Kanye West" />
+            <p>Anmeldelse</p>
+          </article>
+          <article>
+            <img src="galleri/sabrina.webp" alt="Interview" />
+            <p>Interview</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Highlight (tekst + billede) -->
+      <section class="highlight">
+        <div class="highlight-text">
+          <h2>Århundredets mest banebrydende internationale album</h2>
+          <p>Del 1 – en guide til de mest nyskabende udgivelser.</p>
+        </div>
+        <img src="galleri/tyler.webp" alt="Tyler the Creator" />
+      </section>
+
+      <!-- Sort sektion -->
+      <section class="dark-section">
+        <h2>Det skal du se og høre i oktober</h2>
+        <div class="grid-3 tiles">
+          <article>
+            <img src="galleri/badbunny.webp" alt="Bad Bunny" />
+            <p>
+              Weekendens streaming-tip: En af verdens største kunstnere indtager
+              den lille skærm
+            </p>
+          </article>
+          <article>
+            <img src="galleri/theweekend.webp" alt="The Weeknd" />
+            <p>
+              Her er 10 album, du skal høre i oktober – endelig følger hun op på
+              seksstjernet mesterværk
+            </p>
+          </article>
+          <article>
+            <img src="galleri/tessa.webp" alt="Tessa" />
+            <p>
+              Guide: Her er koncerterne, du skal opleve i oktober – fra
+              hasteopereret band til Tessas lovede magtdemonstration
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER -->
-    <footer>
-      <h2>Få dagens tophistorier i din inbox</h2>
-      <form>
-        <input type="email" placeholder="Din e-mail-adresse" required />
-        <button type="submit">Tilmeld</button>
-      </form>
-      <p class="smalltext">© 2025 Soundform</p>
+    <footer class="footer">
+      <div class="newsletter">
+        <h2>FÅ DAGENS TOPHISTORIER I DIN INBOX</h2>
+        <form>
+          <div class="input-row">
+            <input type="email" placeholder="DIN E-MAIL-ADRESSE" required />
+            <button type="submit">TILMELD</button>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent" />
+            <label for="consent">
+              Jeg ønsker på hverdage at modtage et overblik over de vigtigste
+              historier og accepterer samtidig
+              <a href="#">privatlivspolitikken</a>.
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="links">
+          <a href="#">Kontakt</a>
+          <a href="#">Ændresamtykke</a>
+          <a href="#">Persondata</a>
+        </div>
+        <p class="copyright">© 2025 SOUNDFORM</p>
+      </div>
     </footer>
+
+    <script src="menu.js"></script>
   </body>
 </html>

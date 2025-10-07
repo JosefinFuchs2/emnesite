@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om Soundform</title>
+    <link rel="icon" type="image/webp" href="logoer/logo.webp" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="topbar">
+      <button class="burger" aria-label="Åbn menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
+      </div>
+
+      <div class="search">🔍</div>
+    </header>
+
+    <!-- BURGERMENU OVERLAY -->
+    <nav class="overlay-menu">
+      <button class="close-btn" aria-label="Luk menu">✕</button>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="artikler.html">Artikler</a></li>
+        <li><a href="nyhedsbrev.html">Nyhedsbrev</a></li>
+        <li><a href="omos.html">Om os</a></li>
+      </ul>
+      <div class="overlay-footer">
+        <a href="#">Kontakt</a>
+        <a href="#">Ændresamtykke</a>
+        <a href="#">Persondata</a>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="about-page">
+      <h1>OM SOUNDFORM</h1>
+      <hr />
+
+      <p class="intro">
+        Soundform er et dansk, uafhængigt kulturmedie, der filtrerer og
+        forklarer det vigtigste nye inden for musik, film, serier, litteratur og
+        internetkultur.
+      </p>
+
+      <hr />
+
+      <div class="team">
+        <div class="person">
+          <h4>ADM. DIREKTØR</h4>
+          <p>LASSE KYED</p>
+        </div>
+
+        <div class="person">
+          <h4>CHEFREDAKTØR</h4>
+          <p>NICOLAI TORP</p>
+        </div>
+
+        <div class="person">
+          <h4>FILMREDAKTØR</h4>
+          <p>JACOB LUDVIGSEN</p>
+        </div>
+
+        <div class="person">
+          <h4>MUSIKREDAKTØR</h4>
+          <p>MALTHE HJORT</p>
+        </div>
+
+        <div class="person">
+          <h4>REDAKTØR FOR KULTURSTOF</h4>
+          <p>JOHANNE LERHARD</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="partners">
+        <h4>ANNONCERING OG PARTNERSKABER</h4>
+        <p>
+          Se vores mediekit nedenfor, hvor du kan finde detaljer om vores
+          formater, produkter og målgrupper samt kontaktinformation.
+        </p>
+        <a href="#" class="media-link">MEDIA.SOUNDFORM.COM</a>
+      </div>
+    </main>
+
+    <!-- FOOTER (samme som index.html) -->
+    <footer class="footer">
+      <div class="newsletter">
+        <h2>FÅ DAGENS TOPHISTORIER I DIN INBOX</h2>
+        <form>
+          <div class="input-row">
+            <input type="email" placeholder="DIN E-MAIL-ADRESSE" required />
+            <button type="submit">TILMELD</button>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent" />
+            <label for="consent">
+              Jeg ønsker på hverdage at modtage et overblik over de vigtigste
+              historier og accepterer samtidig
+              <a href="#">privatlivspolitikken</a>.
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="footer-bottom">
+        <div class="links">
+          <a href="#">Kontakt</a>
+          <a href="#">Ændresamtykke</a>
+          <a href="#">Persondata</a>
+        </div>
+        <p class="copyright">© 2025 SOUNDFORM</p>
+      </div>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

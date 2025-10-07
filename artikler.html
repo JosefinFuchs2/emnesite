@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikler – Soundform</title>
+    <link rel="icon" type="image/webp" href="logoer/logo.webp" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="topbar">
+      <button class="burger" aria-label="Åbn menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
+      </div>
+
+      <div class="search">🔍</div>
+    </header>
+
+    <!-- BURGERMENU -->
+    <nav class="overlay-menu">
+      <button class="close-btn" aria-label="Luk menu">✕</button>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="artikler.html">Artikler</a></li>
+        <li><a href="nyhedsbrev.html">Nyhedsbrev</a></li>
+        <li><a href="omos.html">Om os</a></li>
+      </ul>
+      <div class="overlay-footer">
+        <a href="#">Kontakt</a>
+        <a href="#">Ændresamtykke</a>
+        <a href="#">Persondata</a>
+      </div>
+    </nav>
+
+    <main class="articles-page">
+      <!-- FEATURED GRID -->
+      <section class="featured-grid">
+        <article class="featured-main">
+          <img src="galleri/jcole.webp" alt="Taylor Swift" />
+          <div class="text-overlay">
+            <h1>Det værste ved Taylor Swifts nye disstrack</h1>
+            <p>Det er, at det ikke engang er underholdende</p>
+          </div>
+        </article>
+
+        <div class="featured-side">
+          <article>
+            <img src="galleri/billie.webp" alt="Billie Eilish" />
+            <h2>Billie Eilish overrasker igen</h2>
+          </article>
+          <article>
+            <img src="galleri/rosalia.webp" alt="Rosalía" />
+            <h2>Rosalía i ny rolle som producent</h2>
+          </article>
+          <article>
+            <img src="galleri/drake.webp" alt="Drake" />
+            <h2>Drake vender tilbage</h2>
+          </article>
+        </div>
+      </section>
+
+      <!-- ARTIKEL-GRID -->
+      <section class="article-grid">
+        <article>
+          <img src="galleri/kanye.webp" alt="Kanye West" />
+          <h2>Kanye West: Albummet ingen forstod</h2>
+        </article>
+        <article>
+          <img src="galleri/sabrina.webp" alt="Sabrina Carpenter" />
+          <h2>Sabrina Carpenter leverer endnu et pophit</h2>
+        </article>
+        <article>
+          <img src="galleri/rihanna.webp" alt="Rihanna" />
+          <h2>Rihanna teaser ny musik – men hvornår?</h2>
+        </article>
+        <article>
+          <img src="galleri/theweekend.webp" alt="The Weeknd" />
+          <h2>The Weeknd skifter retning – igen</h2>
+        </article>
+        <article>
+          <img src="galleri/tessa.webp" alt="Tessa" />
+          <h2>Tessa: Fra hård rap til ægte følelser</h2>
+        </article>
+        <article>
+          <img src="galleri/sombr.webp" alt="Sombr" />
+          <h2>Sombr skaber lyden af 2025</h2>
+        </article>
+      </section>
+
+      <div class="article-grid">
+        <!-- dine andre artikler -->
+
+        <article class="wide">
+          <img src="galleri/" alt="Stor artikel" />
+          <h2>Taylor Swift løfter sløret for sit nye album</h2>
+        </article>
+      </div>
+
+      <!-- STOR FREMHÆVET ARTIKEL -->
+      <section class="highlight big">
+        <div class="highlight-text">
+          <h2>Århundredets mest banebrydende internationale album</h2>
+          <p>En guide til de mest nyskabende udgivelser i nyere tid.</p>
+        </div>
+        <img src="galleri/tyler.webp" alt="Tyler, The Creator" />
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="newsletter">
+        <h2>FÅ DAGENS TOPHISTORIER I DIN INBOX</h2>
+        <form>
+          <div class="input-row">
+            <input type="email" placeholder="DIN E-MAIL-ADRESSE" required />
+            <button type="submit">TILMELD</button>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent" />
+            <label for="consent">
+              Jeg ønsker på hverdage at modtage et overblik over de vigtigste
+              historier og accepterer samtidig
+              <a href="#">privatlivspolitikken</a>.
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="links">
+          <a href="#">Kontakt</a>
+          <a href="#">Ændresamtykke</a>
+          <a href="#">Persondata</a>
+        </div>
+        <p class="copyright">© 2025 SOUNDFORM</p>
+      </div>
+    </footer>
+
+    <script src="menu.js"></script>
+  </body>
+</html>
