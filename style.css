@@ -38,7 +38,7 @@ body {
 .burger span {
   width: 100%;
   height: 2px;
-  background: #ffffff;
+  background: #000000;
   transition: 0.3s;
 }
 .search {
@@ -47,67 +47,8 @@ body {
   font-size: 20px;
   cursor: pointer;
   color: #2b2b2b;
-} /* =========================== OVERLAY MENU – FIXED VERSION =========================== */
-.overlay-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100vh;
-  background: #111;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 100px 60px 60px;
-  transition: left 0.3s ease;
-  z-index: 1200;
-}
-.overlay-menu.active {
-  left: 0;
-}
-.close-btn {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-.overlay-links {
-  list-style: none;
-  margin-top: 20px;
-}
-.overlay-links li {
-  font-size: 42px;
-  font-weight: 800;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-.overlay-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-.overlay-links a:hover {
-  opacity: 0.7;
-} /* Footer i menuen */
-.overlay-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 14px;
-}
-.overlay-footer a {
-  color: #ccc;
-  text-decoration: none;
-}
-.overlay-footer a:hover {
-  color: #fff;
-}
-j /* =========================== GENEREL LAYOUT =========================== */ section {
+} /* =========================== GENEREL LAYOUT =========================== */
+section {
   margin-bottom: 80px;
 }
 section h2 {
@@ -128,12 +69,12 @@ section h2 {
 }
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
-} /* Ens højde på alle kort i rækkerne (så de flugter) */
+}
 .hero-grid article,
 .grid-3 article,
 .grid-4 article {
   position: relative;
-  aspect-ratio: 16 / 9; /* <- Gør rækkerne helt lige */
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 8px;
   background: #ddd;
@@ -147,7 +88,7 @@ section h2 {
   height: 100%;
   object-fit: cover;
   display: block;
-} /* Tekst på billede (nederst til venstre) */
+}
 .hero-grid article h2,
 .hero-grid article p,
 .grid-3 article h2,
@@ -177,7 +118,7 @@ section h2 {
   font-size: 0.92rem;
   font-weight: 500;
   line-height: 1.35;
-} /* Læse-venlig gradient i bunden */
+}
 .hero-grid article::after,
 .grid-3 article::after,
 .grid-4 article::after {
@@ -189,7 +130,9 @@ section h2 {
   height: 55%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.72), transparent);
   z-index: 1;
-} /* =========================== HERO BANNER =========================== */
+}
+
+/* =========================== HERO BANNER =========================== */
 .hero-article {
   position: relative;
   margin-bottom: 36px;
@@ -216,7 +159,9 @@ section h2 {
 }
 .hero-text p {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-} /* =========================== DARK SECTION =========================== */
+}
+
+/* =========================== DARK SECTION =========================== */
 .dark-section {
   background: #111;
   color: #fff;
@@ -225,7 +170,9 @@ section h2 {
 .dark-section h2 {
   margin-bottom: 28px;
   color: #fff;
-} /* =========================== HIGHLIGHT – STIL SOM HERO =========================== */
+}
+
+/* =========================== HIGHLIGHT – STIL SOM HERO =========================== */
 .highlight {
   position: relative;
   margin: 0;
@@ -234,7 +181,7 @@ section h2 {
 .highlight img {
   width: 100%;
   height: auto;
-  aspect-ratio: 21 / 9; /* samme højde/bredde som jcole.webp */
+  aspect-ratio: 21 / 9;
   object-fit: cover;
   display: block;
 }
@@ -254,7 +201,7 @@ section h2 {
 }
 .highlight-text p {
   font-size: clamp(1rem, 1.5vw, 1.15rem);
-} /* Gradient for bedre kontrast */
+}
 .highlight::after {
   content: "";
   position: absolute;
@@ -267,7 +214,9 @@ section h2 {
 }
 section.highlight {
   margin: 80px 0;
-} /* =========================== FOOTER =========================== */
+}
+
+/* =========================== FOOTER =========================== */
 .footer {
   background: #111;
   color: #fff;
@@ -342,7 +291,9 @@ section.highlight {
 }
 .footer-bottom .links a:hover {
   color: #fff;
-} /* =========================== RESPONSIVE =========================== */
+}
+
+/* =========================== RESPONSIVE =========================== */
 @media (max-width: 1100px) {
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
@@ -377,8 +328,10 @@ section.highlight {
   }
 }
 .hero-grid {
-  margin-bottom: 80px; /* giver luft under forsiden-artiklerne */
-} /* --- NYHEDSBREV SIDE --- */
+  margin-bottom: 80px;
+}
+
+/* --- NYHEDSBREV SIDE --- */
 .newsletter-page {
   text-align: center;
   max-width: 700px;
@@ -411,7 +364,7 @@ section.highlight {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-} /* Nyhedsbrev boks */
+}
 .newsletter-box {
   background: #111;
   color: #fff;
@@ -443,7 +396,9 @@ section.highlight {
   font-size: 0.75rem;
   letter-spacing: 1px;
   color: #ccc;
-} /* --- OM OS SIDE --- */
+}
+
+/* --- OM OS SIDE --- */
 .about-page {
   text-align: center;
   max-width: 800px;
@@ -511,7 +466,9 @@ section.highlight {
 }
 .media-link:hover {
   color: #555;
-} /* --- OVERLAY MENU --- */
+}
+
+/* --- OVERLAY MENU --- */
 .overlay-menu {
   position: fixed;
   top: 0;
@@ -561,7 +518,7 @@ section.highlight {
 }
 .overlay-footer a:hover {
   opacity: 0.7;
-} /* Luk-knap */
+}
 .close-btn {
   position: absolute;
   top: 25px;
@@ -571,14 +528,16 @@ section.highlight {
   border: none;
   color: #fff;
   cursor: pointer;
-} /* --- ARTIKLER SIDE --- */ /* --- ARTIKLER SIDE: FEATURED GRID --- */
+}
+
+/* --- ARTIKLER SIDE --- */ /* --- ARTIKLER SIDE: FEATURED GRID --- */
 .featured-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: stretch;
   gap: 24px;
   margin: 60px 80px;
-} /* Venstre stor artikel */
+}
 .featured-main {
   position: relative;
   border-radius: 10px;
@@ -591,7 +550,7 @@ section.highlight {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 16 / 9; /* Ens højde */
+  aspect-ratio: 16 / 9;
 }
 .featured-main .text-overlay {
   position: absolute;
@@ -610,7 +569,7 @@ section.highlight {
 .featured-main p {
   font-size: 1rem;
   font-weight: 400;
-} /* Højre side med små artikler */
+}
 .featured-side {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -635,7 +594,7 @@ section.highlight {
   color: #fff;
   font-size: 1rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-} /* Grid for resten af artiklerne */
+}
 .article-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -662,14 +621,14 @@ section.highlight {
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 .article-grid .wide {
-  grid-column: span 2; /* fylder to kolonner */
+  grid-column: span 2;
   position: relative;
 }
 .article-grid .wide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 2 / 1; /* gør den bredere */
+  aspect-ratio: 2 / 1;
 }
 .article-grid .wide h2 {
   position: absolute;
@@ -680,4 +639,332 @@ section.highlight {
   font-size: 1.4rem;
   font-weight: 700;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+a.hero-article,
+a.featured-main {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+a.hero-article:hover img,
+a.featured-main:hover img {
+  filter: brightness(0.9);
+  transition: 0.3s ease;
+}
+/* === Artikel layout === */
+.article-container {
+  background: #f5f5f5;
+  padding: 60px 0;
+}
+
+.article-content {
+  background: #fff;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.article-meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.article-subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.article-content p {
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.article-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 40px 0 15px;
+}
+
+.article-content ul {
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+.article-content ul li {
+  margin-bottom: 10px;
+}
+
+.article-video {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.video-caption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 8px;
+}
+/* === TRENDING SEKTION – SOM PÅ FORSIDEN === */
+.trending {
+  background: #111;
+  color: #fff;
+  padding: 80px 80px;
+  margin-top: 80px;
+}
+
+.trending h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.trending .grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.trending article {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.trending article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.trending article::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.trending article h2 {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  line-height: 1.4;
+}
+
+.trending article p {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .trending {
+    padding: 60px 24px;
+  }
+  .trending .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================== ARTIKEL SIDE =========================== */
+.article-container {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.article-content {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #111;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.article-subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.article-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 30px 0;
+}
+
+.article-video {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.article-video iframe {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.video-caption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* =========================== ARTIKEL SIDE – REN SOUND FORM STIL =========================== */
+.article-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  background: transparent; /* fjerner boksen */
+  box-shadow: none; /* fjerner skygge */
+}
+
+.article-content {
+  color: #111;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.article-subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 0;
+}
+
+.article-video {
+  margin: 40px 0;
+}
+
+.article-video iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+.article-content h3 {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* --- LISTE --- */
+.article-content ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.article-content li {
+  margin-bottom: 10px;
+}
+
+/* --- TRENDING SEKTION (mindre og pænere) --- */
+.trending {
+  background: #111;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.trending h2 {
+  margin: 0 80px 30px;
+  color: #fff;
+}
+
+.trending .grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 0 80px;
+}
+
+.trending article {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+}
+
+.trending article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trending article h2 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.trending article p {
+  display: none;
 }

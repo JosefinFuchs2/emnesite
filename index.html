@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="generel.css" />
+    <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,8 +20,11 @@
         <span></span><span></span><span></span>
       </button>
       <div class="logo">
-        <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
+        <a href="index.html">
+          <img src="logoer/tekstlogo.webp" alt="Soundform logo" />
+        </a>
       </div>
+
       <button class="search" aria-label="Søg">🔍</button>
     </header>
     <!-- BURGERMENU OVERLAY -->
@@ -39,13 +44,14 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="hero-article">
-          <img src="galleri/jcole.webp" alt="Hero artikel" />
+        <a href="artikel.html" class="hero-article">
+          <img src="galleri/jcole.webp" alt="Taylor Swift artikel" />
           <div class="hero-text">
-            <h1>Det værste ved Taylor Swifts nye disstrack</h1>
-            <p>Det er, at det ikke engang er underholdende</p>
+            <h1>J. Cole er tilbage med ny musik</h1>
+            <p>– og et budskab, der rammer dybt</p>
           </div>
-        </div>
+        </a>
+
         <!-- 3 fremhævede artikler -->
         <div class="hero-grid tiles">
           <article>
@@ -105,6 +111,7 @@
           </article>
         </div>
       </section>
+
       <!-- Highlight (tekst + billede) -->
       <section class="highlight">
         <div class="highlight-text">
@@ -113,6 +120,7 @@
         </div>
         <img src="galleri/tyler.webp" alt="Tyler the Creator" />
       </section>
+
       <!-- Sort sektion -->
       <section class="dark-section">
         <h2>Det skal du se og høre i oktober</h2>
